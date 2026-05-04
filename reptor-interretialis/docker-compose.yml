@@ -3,5 +3,5 @@ services:
     build: .
     container_name: nginx-redirector
     ports:
-      - "8081:80"
-    restart: unless-stopped
+      - "8081:80" # why not 80:80 ? and what about SSL ?
+    restart: unless-stopped # why not mount-bind config to  docker- compose ? 
